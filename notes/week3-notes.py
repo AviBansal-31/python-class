@@ -1,27 +1,13 @@
-n = 5
-while n<= 5
-    print("counting down:{}".format(n))
-#  n--
-    n -= 1
-else:
-    print("we got to zero")
-
-import random
-number = random.randint(0,101)
-print(number)
-print("let the game begin")
-
-guess = int(input('\nPlease input a number'))
-while True:
-    if number == guess:
+if number == guess:
         break
     elif number < guess:
         print('bigger')
+        print('You guessed a bigger number')
     else:
         print('smaller')
+        print('You guessed a smaller number')
     guess = int(input("please guess again"))
 print("correct")
-
 
 import random
 n = random.randint(1,4)
@@ -37,4 +23,4 @@ while counter < 10:
             print('loop2:{0}'.format(counter2))
         else:
             break
-    print('loop1:{0}'.format(counter1))
+    print('loop1:{0}'.format(counter1)
